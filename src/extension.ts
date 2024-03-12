@@ -17,7 +17,7 @@ export async function activate(context: vscode.ExtensionContext) {
             const fileContent = fs.readFileSync(filePath, 'utf8');
             const fileName = path.basename(filePath);
             const fileExtension = path.extname(filePath).substring(1);
-            draftContent += `## ${fileName}\n\n\`\`\`${fileExtension}\n${fileContent}\n\`\`\`\n\n`;
+            draftContent += `## ${filePath}\n\n\`\`\`${fileExtension}\n${fileContent}\n\`\`\`\n\n`;
         }
 
         // 创建新的临时文件来展示内容
