@@ -28,6 +28,10 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gantrol/quick-draft-before-chatgpt-vscode.git"
+  },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
     "compile": "webpack",

@@ -1,71 +1,48 @@
-# quick-draft-before-chatgpt README
+# quick-draft-before-chatgpt
 
-This is the README for your extension "quick-draft-before-chatgpt". After writing up a brief description, we recommend including the following sections.
+你向ChatGPT问问题的时候，是否常常会从几个代码文件复制粘贴代码？这个插件就是用来缓解这个问题的。
 
-## Features
+## What you will get
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+All selected files merged in a Markdown file like this
 
-For example if there is an image subfolder under your extension project workspace:
+![All ts files merged in a Markdown file like this](assets/all%20ts%20files%20merged%20in%20a%20tmp%20markdown.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+## How to use it
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+First select the `Quick Draft Before ChatGPT` command.
+
+![Select the Command](assets/select%20this%20command.png)
+
+And then select some files:
+
+![Select some files](assets/search%20and%20select%20files.png)
+
+You can select all of items match the search:
+
+![Select all ts files](assets/search%20and%20select%20all%20ts%20files%20in%20projects.png)
+
+After you click ok button, you will get a template file window if you select one file or many.
+
+![Some ts merged in a markdown file](assets/some%20ts%20files%20merged%20shown%20in%20a%20tmp%20window.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+None.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+None.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+...
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Just for personal use now
 
-### 1.0.0
+### 0.0.1
 
-Initial release of ...
+Initial release
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

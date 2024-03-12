@@ -7,23 +7,30 @@ export async function activate(context: vscode.ExtensionContext) {
         // 假设已经有了选中的文件路径数组
         const filePaths: string[] = await getSelectedFilePaths();
 
-        let draftContent = '';
+        let draftContent = "";
+
+        if (filePaths.length > 0) {
+            draftContent = "# New Draft\n\n";
+        }
 
         for (const filePath of filePaths) {
             const fileContent = fs.readFileSync(filePath, 'utf8');
             const fileName = path.basename(filePath);
             const fileExtension = path.extname(filePath).substring(1);
-            draftContent += `# New Draft ## ${fileName}\n\n\`\`\`${fileExtension}\n${fileContent}\n\`\`\`\n\n`;
+            draftContent += `## ${fileName}\n\n\`\`\`${fileExtension}\n${fileContent}\n\`\`\`\n\n`;
         }
 
         // 创建新的临时文件来展示内容
-        const tempDocument = await vscode.workspace.openTextDocument({
-            content: draftContent,
-            language: "markdown"
-        });
-        await vscode.window.showTextDocument(tempDocument, { preview: false });
+        if (draftContent) {
+            const tempDocument = await vscode.workspace.openTextDocument({
+                content: draftContent,
+                language: "markdown"
+            });
+            await vscode.window.showTextDocument(tempDocument, { preview: false });
+            vscode.window.showInformationMessage('Draft has been copied to clipboard and opened in a new file.');
+        }
+        
 
-        vscode.window.showInformationMessage('Draft has been copied to clipboard and opened in a new file.');
     });
 
     context.subscriptions.push(disposable);
