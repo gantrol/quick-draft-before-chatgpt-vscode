@@ -10,7 +10,7 @@ Do you often find yourself copying and pasting code from various files when quer
 
 ## Usage
 
-1. Initiate by selecting the `Quick Draft Before ChatGPT` command.
+1. Initiate by selecting the `Quick Draft Before ChatGPT` command. Or using `ctrl+alt+d` when the Explorer sidebar is visible, the focus is on the file explorer within it, and the user is not currently typing in any input field.;
 
 ![Command selection interface](assets/select%20this%20command.png)
 

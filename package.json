@@ -2,7 +2,7 @@
   "name": "quick-draft-before-chatgpt",
   "displayName": "quick-draft-before-chatgpt",
   "description": "Generate draft file with selected files before chating with ChatGPT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -12,6 +12,13 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "keybindings": [
+      {
+        "command": "extension.quickDraftBeforeChatGPT",
+        "key": "ctrl+alt+d",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      }
+    ],
     "views": {
       "explorer": [
         {
