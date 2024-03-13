@@ -1,30 +1,30 @@
-# quick-draft-before-chatgpt
+# Quick Draft Before ChatGPT
 
-When you ask questions to ChatGPT, do you often copy and paste code from multiple code files? This plugin is designed to alleviate that issue.
+Do you often find yourself copying and pasting code from various files when querying ChatGPT? This plugin is crafted to simplify that process.
 
-## What you will get
+## Features
 
-All selected files merged in a Markdown file like this
+- Merge all selected files into a single Markdown file, as shown below.
 
-![All ts files merged in a Markdown file like this](assets/all%20ts%20files%20merged%20in%20a%20tmp%20markdown.png)
+![Merge of all TypeScript files into a single Markdown document](assets/all%20ts%20files%20merged%20in%20a%20tmp%20markdown.png)
 
-## How to use it
+## Usage
 
-First select the `Quick Draft Before ChatGPT` command.
+1. Initiate by selecting the `Quick Draft Before ChatGPT` command.
 
-![Select the Command](assets/select%20this%20command.png)
+![Command selection interface](assets/select%20this%20command.png)
 
-And then select some files:
+2. Choose your files:
 
-![Select some files](assets/search%20and%20select%20files.png)
+![File selection interface](assets/search%20and%20select%20files.png)
 
-You can select all of items match the search:
+- Option to select all items matching your search criteria:
 
-![Select all ts files](assets/search%20and%20select%20all%20ts%20files%20in%20projects.png)
+![Select all TypeScript files within projects](assets/search%20and%20select%20all%20ts%20files%20in%20projects.png)
 
-After you click ok button, you will get a template file window if you select one file or many.
+3. Upon confirming your selection, a template file window will appear, displaying the merged content from either a single or multiple files.
 
-![Some ts merged in a markdown file](assets/some%20ts%20files%20merged%20shown%20in%20a%20tmp%20window.png)
+![Merged TypeScript files in a temporary Markdown document](assets/some%20ts%20files%20merged%20shown%20in%20a%20tmp%20window.png)
 
 ## Requirements
 
@@ -40,14 +40,12 @@ None.
 
 ## Release Notes
 
-Just for personal use now
+Currently for personal use.
 
 ### 0.0.2
 
-Change file name title to path
-
+- Modified to include file path in the title for clarity.
 
 ### 0.0.1
 
-Initial release
-
+- Initial release.
