@@ -1,6 +1,6 @@
 # quick-draft-before-chatgpt
 
-你向ChatGPT问问题的时候，是否常常会从几个代码文件复制粘贴代码？这个插件就是用来缓解这个问题的。
+When you ask questions to ChatGPT, do you often copy and paste code from multiple code files? This plugin is designed to alleviate that issue.
 
 ## What you will get
 
@@ -41,6 +41,11 @@ None.
 ## Release Notes
 
 Just for personal use now
+
+### 0.0.2
+
+Change file name title to path
+
 
 ### 0.0.1
 
