@@ -2,7 +2,7 @@
   "name": "quick-draft-before-chatgpt",
   "displayName": "quick-draft-before-chatgpt",
   "description": "Generate draft file with selected files before chating with ChatGPT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.87.0"
   },

@@ -27,7 +27,6 @@ export async function activate(context: vscode.ExtensionContext) {
                 language: "markdown"
             });
             await vscode.window.showTextDocument(tempDocument, { preview: false });
-            vscode.window.showInformationMessage('Draft has been copied to clipboard and opened in a new file.');
         }
         
 
